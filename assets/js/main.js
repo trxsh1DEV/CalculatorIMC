@@ -5,7 +5,6 @@ const form = document.querySelector('.form');
 
         const inputPeso = e.target.querySelector('.peso');
         const inputAltura = e.target.querySelector('.altura');
-        // Convertendo para Number (int/float)
         const peso = Number(inputPeso.value);
         const altura = Number(inputAltura.value);
         
@@ -20,14 +19,13 @@ const form = document.querySelector('.form');
 
         setResult(msg, true);
         
-        // console.log(peso, altura, typeof altura, typeof peso);
         }
     );
     function addP () {
         const p = document.createElement('p');
         return p;
     };
-    function setResult (msg, isValid) { //is valid é para definir a cor de background no css
+    function setResult (msg, isValid) {
         const result = document.querySelector('#result');
         result.innerHTML = '';
         const p = addP();
